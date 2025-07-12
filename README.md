@@ -18,12 +18,14 @@ A real-time, AI-powered multiplayer mobile chat game built with Flutter and Node
 
 ## 📐 Architecture
 
-```mermaid
-graph TD
-  A[Flutter Client (Android)] -- WebSocket --> B[Node.js Server]
-  B -- HTTP POST --> C[Claude via OpenRouter API]
-  B --> D[Lobby Management & Trivia Engine]
-```
+Flutter App (Android)
+        |
+    WebSocket
+        v
+   Node.js Server
+      /     \
+Claude API  Lobby Engine
+(HTTP POST)  (Internal)
 
 ---
 
@@ -86,6 +88,12 @@ To build a release APK:
 ```bash
 flutter build apk --release
 ```
+
+---
+
+## 🔥 Demo
+
+[📹 Watch 2-min demo video](https://drive.google.com/file/d/1lPDWKH4gWSa7frhUkyQgZWGSnuQ1eSpR/view?usp=sharing)
 
 ---
 
