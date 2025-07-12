@@ -1,0 +1,13 @@
+# Flutter
+client/.dart_tool/
+client/.idea/
+client/.packages
+client/build/
+client/*.iml
+
+# Node.js
+server/node_modules/
+server/.env
+
+# OS
+.DS_Store
